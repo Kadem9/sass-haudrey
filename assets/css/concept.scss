@@ -1,0 +1,78 @@
+#concept {
+    max-width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 2rem;
+    @include respond-lg {
+        padding: 3.5rem;
+    }
+
+    h1 {
+        text-transform: uppercase;
+        font-size: 1.5rem;
+        text-align: center;
+        font-weight: 700;
+        margin-top: 0.5rem;
+        margin-bottom: 2rem;
+    }
+
+    .concept-item {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 1rem;
+        
+        @include respond-lg {
+            flex-direction: row;
+            align-items: flex-start;
+        }
+
+        .concept-img {
+            width: 9rem;
+            height: 9rem;
+            object-fit: cover;
+            border-radius: 9999px;
+            margin-bottom: 1rem;
+
+            @include respond-lg {
+                width: 10rem;
+                height: 10rem;
+                margin-bottom: 0;
+            }
+        }
+
+        .concept-text {
+            text-align: center;
+            @include respond-lg {
+                text-align: left;
+            }
+
+            .concept-subtitle {
+                font-weight: 600;
+                margin-bottom: 0.5rem;
+            }
+        }
+
+        &:nth-child(1), 
+        &:nth-child(3) {
+            @include respond-lg {
+                .concept-img {
+                    margin-right: 2rem;
+                }
+            }
+        }
+
+        &.reverse {
+            @include respond-lg {
+                flex-direction: row-reverse;
+                .concept-img {
+                    margin-left: 2rem;
+                }
+
+                .concept-text {
+                    text-align: right;
+                }
+            }
+        }
+    }
+}

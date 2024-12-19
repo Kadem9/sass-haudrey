@@ -1,0 +1,55 @@
+
+$emerald-500: #10B981;
+$emerald-400: #34D399;
+$green-500: #22C55E;
+$white: #ffffff;
+$black: #000;
+
+$breakpoint-lg: 1024px;
+
+@mixin respond-lg {
+    @media (min-width: $breakpoint-lg) {
+        @content;
+    }
+}
+
+/* Je fais un reset global */
+*, *::before, *::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
+body {
+    font-family: sans-serif;
+}
+
+.container {
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+
+    @include respond-lg {
+        max-width: 1024px;
+    }
+}
+
+@import 'header';
+@import 'promotion';
+@import 'recipe';
+@import 'concept';
+@import 'footer';

@@ -1,0 +1,41 @@
+footer {
+    max-width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    border-top: 2px solid $green-500;
+    padding: 1rem;
+
+    a {
+        color: $black;
+    }
+
+    .footer-content {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-top: 0.5rem;
+    }
+
+    .footer-links {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+    }
+
+    .social-media {
+        display: flex;
+        justify-content: flex-end;
+        
+        a {
+            display: inline-block;
+            img {
+                width: 2rem;
+                margin-right: 0.5rem;
+            }
+
+            &:last-child img {
+                margin-right: 0;
+            }
+        }
+    }
+}

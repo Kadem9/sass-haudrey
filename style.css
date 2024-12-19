@@ -1,0 +1,326 @@
+/* Je fais un reset global */
+*, *::before, *::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+body {
+  font-family: sans-serif;
+}
+
+.container {
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+}
+@media (min-width: 1024px) {
+  .container {
+    max-width: 1024px;
+  }
+}
+
+header {
+  background: linear-gradient(to bottom left, #10B981, #22C55E);
+  padding: 1rem;
+  color: #ffffff;
+}
+header nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+header nav .logo img {
+  width: 2.5rem;
+}
+header nav ul {
+  display: flex;
+}
+header nav ul li {
+  padding: 0.5rem;
+}
+header nav ul li:not(:first-child) {
+  margin-left: 1rem;
+}
+header nav ul li a {
+  color: #ffffff;
+}
+header .title-bloc {
+  margin-top: 9rem;
+  margin-bottom: 9rem;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+}
+@media (min-width: 1024px) {
+  header .title-bloc {
+    width: 50%;
+  }
+}
+header .title-bloc .head-title {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 0.75rem;
+}
+header .title-bloc .head-title h1 {
+  font-size: 1.875rem;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+@media (min-width: 1024px) {
+  header .title-bloc .head-title h1 {
+    font-size: 2.25rem;
+  }
+}
+header .title-bloc p {
+  padding: 0 1rem;
+}
+
+#promotion {
+  max-width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 2rem;
+}
+@media (min-width: 1024px) {
+  #promotion {
+    padding: 3.5rem;
+  }
+}
+#promotion .promotion-cake {
+  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -4px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  padding: 2rem;
+  border-radius: 0.25rem;
+  background: #ffffff;
+  margin-top: -9rem;
+}
+@media (min-width: 1024px) {
+  #promotion .promotion-cake {
+    flex-direction: row;
+  }
+}
+#promotion .promotion-cake img {
+  border-radius: 100px;
+  width: 10rem;
+  height: 10rem;
+  object-fit: cover;
+  margin-bottom: 1rem;
+}
+@media (min-width: 1024px) {
+  #promotion .promotion-cake img {
+    width: 13rem;
+    height: 13rem;
+    margin-bottom: 0;
+  }
+}
+#promotion .promotion-cake .description-cake {
+  text-align: center;
+}
+@media (min-width: 1024px) {
+  #promotion .promotion-cake .description-cake {
+    margin-left: 4rem;
+    text-align: left;
+  }
+}
+#promotion .promotion-cake .description-cake .title-description {
+  text-transform: uppercase;
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+}
+#promotion .promotion-cake .description-cake p {
+  margin-bottom: 0.5rem;
+}
+#promotion .promotion-cake .description-cake button {
+  background: #34D399;
+  color: #ffffff;
+  border-radius: 100px;
+  padding: 0.25rem 0.75rem;
+  margin-top: 1rem;
+}
+
+#recipe {
+  max-width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 2rem;
+}
+@media (min-width: 1024px) {
+  #recipe {
+    padding: 3.5rem;
+  }
+}
+#recipe h1 {
+  text-transform: uppercase;
+  font-size: 1.5rem;
+  text-align: center;
+  font-weight: 700;
+  margin-top: 0.5rem;
+  margin-bottom: 2rem;
+}
+#recipe .card-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1rem;
+}
+#recipe .card-container article {
+  margin-bottom: 1rem;
+  border-top: 2px solid #22C55E;
+  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -4px rgba(0, 0, 0, 0.1);
+  padding: 1rem;
+  border-radius: 0.25rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  flex-basis: 320px;
+}
+@media (min-width: 1024px) {
+  #recipe .card-container article {
+    flex-basis: 370px;
+  }
+}
+#recipe .card-container article img {
+  margin-bottom: 0.5rem;
+  width: 3rem;
+  height: 3rem;
+}
+#recipe .card-container article h4 {
+  font-weight: 600;
+  margin-top: 0.5rem;
+}
+#recipe .card-container article p {
+  margin-top: 1rem;
+  text-align: center;
+}
+
+#concept {
+  max-width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 2rem;
+}
+@media (min-width: 1024px) {
+  #concept {
+    padding: 3.5rem;
+  }
+}
+#concept h1 {
+  text-transform: uppercase;
+  font-size: 1.5rem;
+  text-align: center;
+  font-weight: 700;
+  margin-top: 0.5rem;
+  margin-bottom: 2rem;
+}
+#concept .concept-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+@media (min-width: 1024px) {
+  #concept .concept-item {
+    flex-direction: row;
+    align-items: flex-start;
+  }
+}
+#concept .concept-item .concept-img {
+  width: 9rem;
+  height: 9rem;
+  object-fit: cover;
+  border-radius: 9999px;
+  margin-bottom: 1rem;
+}
+@media (min-width: 1024px) {
+  #concept .concept-item .concept-img {
+    width: 10rem;
+    height: 10rem;
+    margin-bottom: 0;
+  }
+}
+#concept .concept-item .concept-text {
+  text-align: center;
+}
+@media (min-width: 1024px) {
+  #concept .concept-item .concept-text {
+    text-align: left;
+  }
+}
+#concept .concept-item .concept-text .concept-subtitle {
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+}
+@media (min-width: 1024px) {
+  #concept .concept-item:nth-child(1) .concept-img, #concept .concept-item:nth-child(3) .concept-img {
+    margin-right: 2rem;
+  }
+}
+@media (min-width: 1024px) {
+  #concept .concept-item.reverse {
+    flex-direction: row-reverse;
+  }
+  #concept .concept-item.reverse .concept-img {
+    margin-left: 2rem;
+  }
+  #concept .concept-item.reverse .concept-text {
+    text-align: right;
+  }
+}
+
+footer {
+  max-width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  border-top: 2px solid #22C55E;
+  padding: 1rem;
+}
+footer a {
+  color: #000;
+}
+footer .footer-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 0.5rem;
+}
+footer .footer-links {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+footer .social-media {
+  display: flex;
+  justify-content: flex-end;
+}
+footer .social-media a {
+  display: inline-block;
+}
+footer .social-media a img {
+  width: 2rem;
+  margin-right: 0.5rem;
+}
+footer .social-media a:last-child img {
+  margin-right: 0;
+}
+
+/*# sourceMappingURL=style.css.map */
